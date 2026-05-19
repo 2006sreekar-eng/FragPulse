@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FragPulse</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>FragPulse</h1>
+<p>Competitive Browser Aim Trainer</p>
+
+<input id="username" placeholder="Enter username">
+
+<button id="startBtn" onclick="startGame()">Start Game</button>
+<button id="resetBtn" onclick="resetLeaderboard()">Reset Leaderboard</button>
+<button id="clearBtn" onclick="clearCurrentGame()">Clear Current Stats</button>
+
+<div class="stats">
+  <div class="box">Time: <span id="time">30</span>s</div>
+  <div class="box">Hits: <span id="hits">0</span></div>
+  <div class="box">Misses: <span id="misses">0</span></div>
+  <div class="box">Score: <span id="score">0</span></div>
+</div>
+
+<h2 id="countdown"></h2>
+
+<div id="game">
+  <div id="target"></div>
+</div>
+
+<h2>Result</h2>
+<p id="result">Start the game to see your stats</p>
+
+<h2>Leaderboard</h2>
+
+<table>
+<thead>
+<tr>
+<th>Player</th>
+<th>Score</th>
+<th>Accuracy</th>
+<th>Reaction Time</th>
+</tr>
+</thead>
+
+<tbody id="leaderboard"></tbody>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
